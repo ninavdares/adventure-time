@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <title>My first plain html5 game</title>
+        <style>
+            canvas{
+                display: block;
+                margin: 0 auto;
+            }
+            #player, .player{
+                display: none;
+            }
+            #background{
+                display: none;
+            }
+            #enemy, .enemy{
+              display: none;
+            }
+        </style>
+    </head>
+    <body>
+      <audio src="baconpancakes.mp3" autoplay loop></audio>
+        <img class=player id="playerf1" src="finn walks right 1.png" />
+        <img class=player id="playerf2" src="finn walks right 2.png" />
+        <img class=player id="playerf3" src="finn walks right 3.png" />
+        <img class=player id="playerf4" src="finn walks right 4.png" />
+        <img class=player id="playerf5" src="finn walks right 5.png" />
+        <img class=player id="playerf6" src="finn walks right 6.png" />
+        <img class=enemy id="enemyf1" src="the_lich.png" />
+        <img class=player id="background" src="adventure_time_background.png" />
+        <canvas id="canvas" width="1000" height="700"></canvas>
+        <script src="player.js"></script>
+        <script src="enemy.js"></script>
+        <script src ="main.js"></script>
+        <script src ="controls.js"></script>
+    </body>
+</html>

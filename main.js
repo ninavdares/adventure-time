@@ -14,7 +14,7 @@ function animate(){
     ctx.drawImage(background, 0, 0)
     if (player.dead){
       //alert("You suck!");
-      //window.location.href = "index.html";
+      window.location.href = "index.html";
       return;
     }
     player.update();

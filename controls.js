@@ -21,10 +21,10 @@ $(document).on('touchmove', function(e){
  e.preventDefault();
  var touchX = e.touches[0].clientX;
  var touchY = e.touches[0].clientY;
- if (touch < player.x) player.velX = -5;
- if (touch > player.x) player.velX = 5;
- if (touch < player.y) player.velY = -5;
- if (touch > player.y) player.velY = 5;
+ if (touchX < player.x) player.velX = -5;
+ if (touchX > player.x) player.velX = 5;
+ if (touchY < player.y) player.velY = -5;
+ if (touchY > player.y) player.velY = 5;
 });
 
 $(document).on('touchend', function(e){
